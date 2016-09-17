@@ -35,7 +35,7 @@ module.exports = {
       minLength: 1
     },
     cuisine:{
-      type:"string",
+      type:"array",
       required:false,
       minLength: 1
     },
