@@ -636,3 +636,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+
+#bootstrap-overrides input[type=text] {
+  color: black !important; 
+}
