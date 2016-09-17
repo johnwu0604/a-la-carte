@@ -9,9 +9,10 @@ module.exports = {
 
   result: function(req, res, next) {
 
-    var yelp = require("node-yelp");
+    var yelp = require('node-yelp');
+    var google = require('google_directions');
 
-    var client = yelp.createClient({
+    var yelp_client = yelp.createClient({
       oauth: {
         "consumer_key": 'L6yXbSQ83qgyB0tWsxxWGA',
         "consumer_secret": '2Ic9J9Vupk4xRNArMtuyEKxOjDg',
@@ -20,15 +21,30 @@ module.exports = {
       }
     });
 
-    client.search({
-      term: req.param('term'),
-      location: req.param('location')
-    }).then(function (data) {
-      var restaurants = data.businesses;
+    var google_params = {
+      origin: req.param('location1'),
+      destination: req.param('location2'),
+      mode: "driving",
+      key: "AIzaSyCriPNqT-ALE6UlXUvhW8xeovlCBvXwmvE",
+    };
+
+    google.getDirections(google_params, function (err, data) {
+      if (err) return next();
+      var routes = data.routes[0];
       res.view({
-        restaurants: restaurants
+        routes:routes
       });
     });
+
+    // yelp_client.search({
+    //   term: req.param('term'),
+    //   location: req.param('location1')
+    // }).then(function (data) {
+    //   var restaurants = data.businesses;
+    //   res.view({
+    //     restaurants: restaurants
+    //   });
+    // });
 
   }
 
