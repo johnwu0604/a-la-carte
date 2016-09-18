@@ -52,39 +52,45 @@ module.exports = {
 
     });
 
-    // for (i = 0; i < points.length;) {
-    //
-    //   yelp_client.search({
-    //     term: req.param('term'),
-    //     ll: points[i]
-    //   }).then(function (data) {
-    //     var results = data.businesses;
-    //     results.forEach(function(restaurant) {
-    //       if (!containsObject(restaurant, restaurants)) {
-    //         restaurants.push(restaurant);
-    //       }
-    //     });
-    //   });
-    //
-    //   //only search every 10 coordinates
-    //   i += 10;
-    // }
+    setTimeout(function() {
+      for (i = 0; i < points.length;) {
+        yelp_client.search({
+          term: req.param('term'),
+          ll: points[i][0] + "," + points[i][1],
+          radius_filter: "10000"
+        }).then(function (data) {
+          var results = data.businesses;
+          results.forEach(function(restaurant) {
+            if (restaurant.rating > 3) {
+              if (!containsObject(restaurant, restaurants)) {
+                restaurants.push(restaurant);
+              }
+            }
+          });
+        });
+        //only search every 10 coordinates
+        i += 10;
+      }
 
-    //do one last search on the final destination in case it was skipped
-    yelp_client.search({
-      term: req.param('term'),
-      location: points[1]
-    }).then(function (data) {
-      var results = data.businesses;
-      results.forEach(function(restaurant) {
-        if (!containsObject(restaurant, restaurants)) {
-          restaurants.push(restaurant);
-        }
+      yelp_client.search({
+        term: req.param('term'),
+        ll: points[points.length-1][0] + "," + points[points.length-1][1],
+        radius_filter: "10000"
+      }).then(function (data) {
+        var results = data.businesses;
+        results.forEach(function(restaurant) {
+          if (restaurant.rating > 3) {
+            if (!containsObject(restaurant, restaurants)) {
+              restaurants.push(restaurant);
+            }
+          }
+        });
+        res.view({
+          restaurants: restaurants
+        });
       });
-      res.view({
-        restaurants: restaurants
-      });
-    });
+
+    }, 8000);
 
   }
 

@@ -4,9 +4,7 @@
     <list default="true" id="fc20e3d5-733d-4190-9e2d-2c0fd38933a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/A-La-Carte/api/controllers/RestaurantController.js" afterPath="$PROJECT_DIR$/A-La-Carte/api/controllers/RestaurantController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/A-La-Carte/package.json" afterPath="$PROJECT_DIR$/A-La-Carte/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/A-La-Carte/views/restaurant/result.ejs" afterPath="$PROJECT_DIR$/A-La-Carte/views/restaurant/result.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/A-La-Carte/config/models.js" afterPath="$PROJECT_DIR$/A-La-Carte/config/models.js" />
     </list>
     <ignored path="HackTheNorth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +40,18 @@
       <file leaf-file-name="RestaurantController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/A-La-Carte/api/controllers/RestaurantController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+            <state relative-caret-position="278">
+              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/A-La-Carte/config/models.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -84,11 +92,9 @@
       <file leaf-file-name="homepage.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/A-La-Carte/views/homepage.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-              <folding>
-                <marker date="1474131473000" expanded="true" signature="47:260" ph="..." />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,9 +110,10 @@
         <option value="$PROJECT_DIR$/A-La-Carte/api/models/Restaurant.js" />
         <option value="$PROJECT_DIR$/A-La-Carte/config/routes.js" />
         <option value="$PROJECT_DIR$/A-La-Carte/config/connections.js" />
-        <option value="$PROJECT_DIR$/A-La-Carte/views/homepage.ejs" />
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/A-La-Carte/views/restaurant/result.ejs" />
+        <option value="$PROJECT_DIR$/A-La-Carte/config/models.js" />
+        <option value="$PROJECT_DIR$/A-La-Carte/views/homepage.ejs" />
         <option value="$PROJECT_DIR$/A-La-Carte/api/controllers/RestaurantController.js" />
       </list>
     </option>
@@ -122,7 +129,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="279" />
+    <option name="x" value="51" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="813" />
@@ -270,7 +277,7 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration default="false" name="Sails" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="A-La-Carte/node_modules/sails/bin/sails.js" application-parameters="lift" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="Sails" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="node_modules/sails/bin/sails.js" application-parameters="lift " working-dir="$PROJECT_DIR$/A-La-Carte">
       <profiling v8-profiler-path="" />
       <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
         <profiling v8-profiler-path="" />
@@ -295,24 +302,24 @@
       <option name="presentableId" value="Default" />
       <updated>1474086209878</updated>
       <workItem from="1474086211105" duration="16862000" />
-      <workItem from="1474122957385" duration="20449000" />
+      <workItem from="1474122957385" duration="25184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37311000" />
+    <option name="totallyTimeSpent" value="42046000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="279" y="23" width="1440" height="813" extended-state="0" />
-    <editor active="true" />
+    <frame x="51" y="23" width="1440" height="813" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33009708" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33009708" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39805827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -337,7 +344,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -362,16 +369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A-La-Carte/views/homepage.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <marker date="1474131473000" expanded="true" signature="47:260" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -409,10 +406,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/A-La-Carte/config/models.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A-La-Carte/views/homepage.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/A-La-Carte/api/controllers/RestaurantController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+        <state relative-caret-position="278">
+          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
           <folding />
         </state>
       </provider>
