@@ -68,8 +68,8 @@ module.exports = {
             }
           });
         });
-        //only search every 10 coordinates
-        i += 10;
+        //only search every 20 coordinates
+        i += 20;
       }
 
       yelp_client.search({
