@@ -1,9 +1,179 @@
-<form action="/restaurant/result" method="POST">
-  Search:<br>
-  <input type="text" name="term">
-  <br> City 1: <br>
-  <input type="text" name="location1">
-  <br> City 2: <br>
-  <input type="text" name="location2">
-  <input type="submit" value="Submit">
-</form>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">A La Carte</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">What We Do</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">How It Works</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+          <center><img src="img/logos/cartelogo.jpg" alt="logo" height="190" width="140" style="position: absolute; top: 100px; left: 550px;"</center>
+            <div class="intro-text">
+
+                <div class="intro-lead-in" style="position: absolute; top: 500px; left: 450px">Taste Your Journey</div>
+                <div class="intro-heading">A La Carte</div>
+                <form action="/restaurant/result" method="POST">
+                    <input type="text" name="location1" required="required" placeholder="Leaving From" class="input-large" style="color:black;">
+                    <input type="text" name="location2" required="required" placeholder="Going To" class="input-large" style="color:black;">
+                    <input type="text" name="term" required="required" placeholder="Keyword" class="input-large" style="color:black;">
+                    <input type="submit" class="searchbtn" value="GO">
+             </form>
+        </div>
+    </header>
+
+
+    <!-- Services / What we Do Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">What We Do</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">About Us</h4>
+                    <p class="text-muted">We are a Montreal-based company with a team full of people who have a passion for food and travel. Join us on our journey in search of delicious food stops along unforgettable road trip routes through our "A La Carte" web application.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Find Good Food</h4>
+                    <p class="text-muted">We find great locations for you to stop at along your journey whether it be a restaurant, coffee shop, bar or small town diner. Take a quick break to grab a bite before you hit the road again.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Promote Local Businesses</h4>
+                    <p class="text-muted">We want to inspire our users to travel and find local places that they would not have known about. There are hidden food treasures along your route that are waiting to be discovered!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / How To Use Section -->
+    <section id="about" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How It Works</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-responsive" src="img/about/route.jpg" align="middle">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step 1</h4>
+                                    <h4 class="subheading">Choose Point A and Point B</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Input your origin (Point A) and your destination (Point B) then click search to find the route for your journey.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-responsive" src="img/about/hamburger.jpg" align="middle">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step 2</h4>
+                                    <h4 class="subheading">Discover Stops Along Your Route</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Once you click search, you will be brought to the results page where you can find all the restaurants that are along your route.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-center" src="img/about/coupe.jpg" align="middle">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step 3</h4>
+                                    <h4 class="subheading">Explore and Eat</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Pick your favourite restaurants along the way and make frequent stops to eat!</p>
+                                </div>
+                            </div>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Taste
+                                    <br>Your
+                                    <br>Journey</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sponsor Aside -->
+     <aside class="sponsor">
+        <div class="container">
+                <div class="center">
+                    <a href="#">
+                        <img src="img/logos/yelp.jpg" align="right" alt="logo">
+                    </a>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
