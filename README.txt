@@ -4,6 +4,7 @@ Setup:
 2) Run "sudo npm -g install sails"
 3) Run "npm install node-yelp --save"
 4) Run "npm install google_directions --save"
+4) Run "npm install polyline --save"
 
 Starting the app:
 
